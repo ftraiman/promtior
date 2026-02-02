@@ -22,7 +22,6 @@ ollama pull llama3
 Navega a la carpeta del proyecto e instala los paquetes de Python:
 
 ```bash
-cd promtior-ollama-bot
 pip install -r requirements.txt
 ```
 
@@ -50,13 +49,3 @@ Abre tu navegador en:
 - **Embeddings**: Llama 3 (vía Ollama)
 - **Vector Store**: ChromaDB (Local)
 - **Framework**: LangChain & LangServe
-
-## ❓ Solución de Problemas
-
-**Error: Connection refused**
-- Asegúrate de que la aplicación de Ollama esté abierta y corriendo (deberías ver el icono en la barra de menú).
-- Por defecto corre en `localhost:11434`.
-
-**Error: Model not found**
-- Ejecuta `ollama list` para ver los modelos instalados.
-- Si no ves `llama3`, ejecuta `ollama pull llama3`.
